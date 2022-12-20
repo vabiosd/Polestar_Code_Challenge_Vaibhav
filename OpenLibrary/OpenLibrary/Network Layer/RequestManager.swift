@@ -32,6 +32,7 @@ final class RequestManager {
                     let model = try self.jsonDecoder.decode(T.self, from: data)
                     completion(.success(model))
                 } catch {
+                    print(error)
                     completion(.failure(.badResponse))
                 }
                 

@@ -1,0 +1,18 @@
+{
+    "docs": [
+        {
+            "key": "/works/OL27448W",
+            "title": "The Lord of the Rings",
+            "publishYear": ["1999"],
+            "author_name": ["J.R.R. Tolkien"]
+        },
+        {
+            "id": "/works/OL14933414W",
+            "title": "The Fellowship of the Ring",
+            "publish_year": ["1999"],
+            "author_name": ["J.R.R. Tolkien"]
+        }
+    ]
+}
+
+

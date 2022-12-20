@@ -9,7 +9,11 @@ import Foundation
 
 struct BookSearchResult: Decodable {
     
+    typealias BookSearchResultIdentifier = String
+    
     /// Properties decoded from the book search result JSON
+    
+    let key: BookSearchResultIdentifier
     let title: String
     /// Both author name and publish year are optional as they can be missing for some results
     let authorName: [String]?
