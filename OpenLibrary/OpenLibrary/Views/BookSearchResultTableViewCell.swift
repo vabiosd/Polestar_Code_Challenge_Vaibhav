@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct BookSearchResultCellData {
+struct BookSearchResultCellData: Equatable {
     let bookTitleAndYear: String
     let authorNameString: String
 }

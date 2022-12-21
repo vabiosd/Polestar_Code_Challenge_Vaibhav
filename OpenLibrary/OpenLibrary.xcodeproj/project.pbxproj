@@ -21,6 +21,7 @@
 		22A99A60294CFEFA008ACD2B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A5F294CFEFA008ACD2B /* RequestManager.swift */; };
 		22A99A63294D08BB008ACD2B /* BookSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A62294D08BB008ACD2B /* BookSearchResults.swift */; };
 		22A99A65294D0D58008ACD2B /* BookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A64294D0D58008ACD2B /* BookSearchResult.swift */; };
+		22D553DF29530E7900B7FC3D /* BookSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D553DE29530E7900B7FC3D /* BookSearchViewModelTests.swift */; };
 		22F61C352951D3F500AA5ED5 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C342951D3F500AA5ED5 /* MockAPIManager.swift */; };
 		22F61C372951D41900AA5ED5 /* MockLocalEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C362951D41900AA5ED5 /* MockLocalEndpoint.swift */; };
 		22F61C3A2951D45000AA5ED5 /* BookSearchMockJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 22F61C392951D45000AA5ED5 /* BookSearchMockJSON.json */; };
@@ -73,6 +74,7 @@
 		22A99A5F294CFEFA008ACD2B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		22A99A62294D08BB008ACD2B /* BookSearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResults.swift; sourceTree = "<group>"; };
 		22A99A64294D0D58008ACD2B /* BookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResult.swift; sourceTree = "<group>"; };
+		22D553DE29530E7900B7FC3D /* BookSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewModelTests.swift; sourceTree = "<group>"; };
 		22F61C342951D3F500AA5ED5 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
 		22F61C362951D41900AA5ED5 /* MockLocalEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalEndpoint.swift; sourceTree = "<group>"; };
 		22F61C392951D45000AA5ED5 /* BookSearchMockJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BookSearchMockJSON.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
@@ -153,6 +155,7 @@
 		22A99A3B294CF945008ACD2B /* OpenLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
+				22D553DD29530E5800B7FC3D /* ViewModel Tests */,
 				22F61C332951D3B000AA5ED5 /* Mocks */,
 				22F61C322951D37C00AA5ED5 /* Network Layer Unit Tests */,
 			);
@@ -195,6 +198,14 @@
 				22A99A64294D0D58008ACD2B /* BookSearchResult.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		22D553DD29530E5800B7FC3D /* ViewModel Tests */ = {
+			isa = PBXGroup;
+			children = (
+				22D553DE29530E7900B7FC3D /* BookSearchViewModelTests.swift */,
+			);
+			path = "ViewModel Tests";
 			sourceTree = "<group>";
 		};
 		22F61C322951D37C00AA5ED5 /* Network Layer Unit Tests */ = {
@@ -464,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F61C402951E71200AA5ED5 /* RequestManagerTests.swift in Sources */,
+				22D553DF29530E7900B7FC3D /* BookSearchViewModelTests.swift in Sources */,
 				22F61C372951D41900AA5ED5 /* MockLocalEndpoint.swift in Sources */,
 				22F61C352951D3F500AA5ED5 /* MockAPIManager.swift in Sources */,
 			);

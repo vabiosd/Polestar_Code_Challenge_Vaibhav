@@ -38,10 +38,15 @@ class BookSearchViewModel {
             return
         } 
         
+        let bookSearchEndpoint = BooksSearchEndpoint(searchString: searchString)
+        fetchBooks(fromEndPoint: bookSearchEndpoint)
+    }
+    
+    func fetchBooks(fromEndPoint endpoint: NetworkEndpointProtocol) {
         state = .searching
         self.bookSearchResults = []
-        let bookSearchEndpoint = BooksSearchEndpoint(searchString: searchString)
-        requestManager.getDataModel(endpoint: bookSearchEndpoint) { [weak self] (result: Result<BookSearchResults, NetworkError>) in
+        
+        requestManager.getDataModel(endpoint: endpoint) { [weak self] (result: Result<BookSearchResults, NetworkError>) in
             guard let self = self else {
                 return
             }
