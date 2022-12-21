@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		22A99A26294CF942008ACD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A25294CF942008ACD2B /* AppDelegate.swift */; };
 		22A99A28294CF942008ACD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A27294CF942008ACD2B /* SceneDelegate.swift */; };
-		22A99A2A294CF942008ACD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A29294CF942008ACD2B /* ViewController.swift */; };
-		22A99A2D294CF942008ACD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A99A2B294CF942008ACD2B /* Main.storyboard */; };
+		22A99A2A294CF942008ACD2B /* BookSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A29294CF942008ACD2B /* BookSearchViewController.swift */; };
 		22A99A2F294CF944008ACD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A99A2E294CF944008ACD2B /* Assets.xcassets */; };
 		22A99A32294CF944008ACD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A99A30294CF944008ACD2B /* LaunchScreen.storyboard */; };
 		22A99A47294CF945008ACD2B /* OpenLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A99A46294CF945008ACD2B /* OpenLibraryUITests.swift */; };
@@ -27,6 +26,15 @@
 		22F61C3A2951D45000AA5ED5 /* BookSearchMockJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 22F61C392951D45000AA5ED5 /* BookSearchMockJSON.json */; };
 		22F61C3E2951E6CC00AA5ED5 /* BookSearchMockBrokenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 22F61C3D2951E6CC00AA5ED5 /* BookSearchMockBrokenJSON.json */; };
 		22F61C402951E71200AA5ED5 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C3F2951E71200AA5ED5 /* RequestManagerTests.swift */; };
+		22F61C432951F94D00AA5ED5 /* BookSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C422951F94D00AA5ED5 /* BookSearchViewModel.swift */; };
+		22F61C4A29522ECA00AA5ED5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C4929522ECA00AA5ED5 /* LoadingViewController.swift */; };
+		22F61C4C29522ED800AA5ED5 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C4B29522ED800AA5ED5 /* ErrorViewController.swift */; };
+		22F61C4E29522EEC00AA5ED5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C4D29522EEC00AA5ED5 /* BaseViewController.swift */; };
+		22F61C5129522F4100AA5ED5 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C5029522F4100AA5ED5 /* LocalizableStrings.swift */; };
+		22F61C542952307400AA5ED5 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C532952307400AA5ED5 /* GenericTableViewDataSource.swift */; };
+		22F61C56295235E400AA5ED5 /* BookSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C55295235E400AA5ED5 /* BookSearchResultTableViewCell.swift */; };
+		22F61C59295246FB00AA5ED5 /* UiViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C58295246FB00AA5ED5 /* UiViewController + extension.swift */; };
+		22F61C5C2952476700AA5ED5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F61C5B2952476700AA5ED5 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +58,7 @@
 		22A99A22294CF942008ACD2B /* OpenLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A99A25294CF942008ACD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A99A27294CF942008ACD2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22A99A29294CF942008ACD2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22A99A2C294CF942008ACD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22A99A29294CF942008ACD2B /* BookSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewController.swift; sourceTree = "<group>"; };
 		22A99A2E294CF944008ACD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A99A31294CF944008ACD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A99A33294CF944008ACD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +78,15 @@
 		22F61C392951D45000AA5ED5 /* BookSearchMockJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BookSearchMockJSON.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		22F61C3D2951E6CC00AA5ED5 /* BookSearchMockBrokenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BookSearchMockBrokenJSON.json; sourceTree = "<group>"; };
 		22F61C3F2951E71200AA5ED5 /* RequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
+		22F61C422951F94D00AA5ED5 /* BookSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewModel.swift; sourceTree = "<group>"; };
+		22F61C4929522ECA00AA5ED5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		22F61C4B29522ED800AA5ED5 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		22F61C4D29522EEC00AA5ED5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		22F61C5029522F4100AA5ED5 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		22F61C532952307400AA5ED5 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		22F61C55295235E400AA5ED5 /* BookSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		22F61C58295246FB00AA5ED5 /* UiViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController + extension.swift"; sourceTree = "<group>"; };
+		22F61C5B2952476700AA5ED5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +137,14 @@
 		22A99A24294CF942008ACD2B /* OpenLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				22A99A61294CFF46008ACD2B /* Models */,
 				22A99A55294CFBFD008ACD2B /* Network Layer */,
-				22A99A25294CF942008ACD2B /* AppDelegate.swift */,
-				22A99A27294CF942008ACD2B /* SceneDelegate.swift */,
-				22A99A29294CF942008ACD2B /* ViewController.swift */,
-				22A99A2B294CF942008ACD2B /* Main.storyboard */,
-				22A99A2E294CF944008ACD2B /* Assets.xcassets */,
-				22A99A30294CF944008ACD2B /* LaunchScreen.storyboard */,
+				22F61C4729522E3400AA5ED5 /* Shared */,
+				22F61C5A2952472100AA5ED5 /* Coordinators */,
+				22F61C442951F9BD00AA5ED5 /* Views */,
+				22F61C412951F93800AA5ED5 /* ViewModels */,
+				22A99A61294CFF46008ACD2B /* Models */,
+				22F61C462951F9F000AA5ED5 /* AppDelegates */,
+				22F61C452951F9E800AA5ED5 /* Resources */,
 				22A99A33294CF944008ACD2B /* Info.plist */,
 			);
 			path = OpenLibrary;
@@ -206,6 +222,86 @@
 				22F61C3D2951E6CC00AA5ED5 /* BookSearchMockBrokenJSON.json */,
 			);
 			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		22F61C412951F93800AA5ED5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C422951F94D00AA5ED5 /* BookSearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		22F61C442951F9BD00AA5ED5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22A99A29294CF942008ACD2B /* BookSearchViewController.swift */,
+				22F61C55295235E400AA5ED5 /* BookSearchResultTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22F61C452951F9E800AA5ED5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A99A2E294CF944008ACD2B /* Assets.xcassets */,
+				22A99A30294CF944008ACD2B /* LaunchScreen.storyboard */,
+				22F61C5029522F4100AA5ED5 /* LocalizableStrings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22F61C462951F9F000AA5ED5 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				22A99A25294CF942008ACD2B /* AppDelegate.swift */,
+				22A99A27294CF942008ACD2B /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		22F61C4729522E3400AA5ED5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C572952406000AA5ED5 /* Extensions */,
+				22F61C522952305F00AA5ED5 /* Helper Classes */,
+				22F61C4829522EB600AA5ED5 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		22F61C4829522EB600AA5ED5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C4929522ECA00AA5ED5 /* LoadingViewController.swift */,
+				22F61C4B29522ED800AA5ED5 /* ErrorViewController.swift */,
+				22F61C4D29522EEC00AA5ED5 /* BaseViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22F61C522952305F00AA5ED5 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C532952307400AA5ED5 /* GenericTableViewDataSource.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		22F61C572952406000AA5ED5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C58295246FB00AA5ED5 /* UiViewController + extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		22F61C5A2952472100AA5ED5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				22F61C5B2952476700AA5ED5 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +411,6 @@
 			files = (
 				22A99A32294CF944008ACD2B /* LaunchScreen.storyboard in Resources */,
 				22A99A2F294CF944008ACD2B /* Assets.xcassets in Resources */,
-				22A99A2D294CF942008ACD2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,14 +439,23 @@
 			files = (
 				22A99A5C294CFEC1008ACD2B /* APIManager.swift in Sources */,
 				22A99A63294D08BB008ACD2B /* BookSearchResults.swift in Sources */,
+				22F61C4C29522ED800AA5ED5 /* ErrorViewController.swift in Sources */,
 				22A99A5E294CFEDB008ACD2B /* NetworkError.swift in Sources */,
 				22A99A65294D0D58008ACD2B /* BookSearchResult.swift in Sources */,
+				22F61C4E29522EEC00AA5ED5 /* BaseViewController.swift in Sources */,
 				22A99A5A294CFDF8008ACD2B /* BooksSearchEndpoint.swift in Sources */,
-				22A99A2A294CF942008ACD2B /* ViewController.swift in Sources */,
+				22F61C5129522F4100AA5ED5 /* LocalizableStrings.swift in Sources */,
+				22A99A2A294CF942008ACD2B /* BookSearchViewController.swift in Sources */,
 				22A99A60294CFEFA008ACD2B /* RequestManager.swift in Sources */,
 				22A99A58294CFC1F008ACD2B /* NetworkEndpointProtocol.swift in Sources */,
+				22F61C432951F94D00AA5ED5 /* BookSearchViewModel.swift in Sources */,
+				22F61C542952307400AA5ED5 /* GenericTableViewDataSource.swift in Sources */,
+				22F61C56295235E400AA5ED5 /* BookSearchResultTableViewCell.swift in Sources */,
 				22A99A26294CF942008ACD2B /* AppDelegate.swift in Sources */,
+				22F61C5C2952476700AA5ED5 /* AppCoordinator.swift in Sources */,
 				22A99A28294CF942008ACD2B /* SceneDelegate.swift in Sources */,
+				22F61C59295246FB00AA5ED5 /* UiViewController + extension.swift in Sources */,
+				22F61C4A29522ECA00AA5ED5 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,14 +494,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22A99A2B294CF942008ACD2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22A99A2C294CF942008ACD2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22A99A30294CF944008ACD2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -536,7 +632,6 @@
 				INFOPLIST_FILE = OpenLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -564,7 +659,6 @@
 				INFOPLIST_FILE = OpenLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
